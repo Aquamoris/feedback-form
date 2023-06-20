@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/imask"></script>
+</head>
+<body>
+<div class="form">
+    <div class="form__title">
+        <h5>Обратная форма</h5>
+    </div>
+    <div class="form__fields">
+        <div class="form__item fio">
+            <label for="fio">ФИО</label>
+            <input type="text" name="fio" id="fio" placeholder="ФИО">
+        </div>
+        <div class="form__item phone">
+            <label for="phone">Телефон</label>
+            <input type="text" name="phone" id="phone" placeholder="+7 (423) 123-45-67">
+        </div>
+        <div class="form__item email">
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email" placeholder="mail@example.com" pattern="[a-z]+">
+        </div>
+        <div class="form__item message">
+            <label for="message">Сообщение</label>
+            <textarea name="message" id="message"></textarea>
+        </div>
+    </div>
+    <div class="form__privacy">
+        <p>Отправляя форму, Вы соглашаетесь на <a href="#">обработку персональных данных</a></p>
+    </div>
+    <div class="form__button">
+        <button id="button">Отправить</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

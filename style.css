@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: silver;
+    font-family: 'Inter', sans-serif;
+    color: #263238;
+}
+
+.form {
+    background-color: white;
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 600px;
+    height: 560px;
+    text-align: center;
+}
+
+
+/* Title */
+.form__title {
+    margin: 45px 0 15px;
+}
+
+h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+/* Fields */
+.form__fields {
+    /*border: solid 1px pink;*/
+    margin: 0 auto;
+    width: 485px;
+    height: 305px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 30%) 40%;
+}
+
+.form__item {
+    height: 100%;
+    /*border: solid 1px aquamarine;*/
+}
+
+.fio {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.phone {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.email {
+    grid-column: 1/2;
+    grid-row: 2/3
+}
+
+.message {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    padding: 0 6px;
+}
+
+label {
+    font-size: 12px;
+}
+
+input {
+    width: 232px;
+    height: 56px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 8px;
+    color: #263238;
+    border: 1px solid rgba(38, 50, 56, 0.16);
+}
+
+textarea {
+    resize: none;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid rgba(38, 50, 56, 0.16);
+    border-radius: 8px;
+    height: 120px;
+    font-family: 'Inter', sans-serif;
+    color: #263238;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+    border: 2px solid #1BB55C;
+}
+
+textarea:focus+label, input:focus+label {
+    color: #1BB55C;
+}
+
+/* Privacy */
+.form__privacy {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 25px;
+}
+
+a {
+    color: #263238;
+}
+
+
+/* Button */
+
+button {
+    background-color: #1BB55C;
+    color: white;
+    width: 205px;
+    height: 45px;
+    border-radius: 4px;
+    border: #1BB55C;
+    font-size: 18px;
+}
+
+.form__button {
+    margin: 15px 0 45px;
+}
